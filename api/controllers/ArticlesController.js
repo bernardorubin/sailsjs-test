@@ -31,6 +31,15 @@ module.exports = {
       }
       res.redirect('/articles/list');
     })
-  }
+  },
+  delete: function(req, res) {
+    Articles.destroy({id: req.params.id}).exec(function(err){
+      if (err) {
+        res.send(500, { error: 'Database Error' });
+      }
+      res.redirect('/articles/list');
+    });
+    return false;
+  },
 };
 

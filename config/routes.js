@@ -24,9 +24,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'pages/homepage'
-  },
+  '/': {view: 'pages/homepage'},
+  '/articles/list': 'ArticlesController.list',
+  '/articles/add': {view: 'add'},
+  'POST /articles/create': 'ArticlesController.create',
 
   /***************************************************************************
   *                                                                          *

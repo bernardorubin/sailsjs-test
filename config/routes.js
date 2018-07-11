@@ -29,6 +29,8 @@ module.exports.routes = {
   '/articles/add': {view: 'add'},
   'POST /articles/create': 'ArticlesController.create',
   'POST /articles/delete/:id': 'ArticlesController.delete',
+  '/articles/edit/:id': 'ArticlesController.edit',
+  '/articles/update/:id': 'ArticlesController.update',
 
   /***************************************************************************
   *                                                                          *

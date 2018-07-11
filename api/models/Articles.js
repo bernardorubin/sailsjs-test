@@ -8,6 +8,9 @@
 module.exports = {
 
   attributes: {
+    id: { type: 'string', columnName: '_id' },
+    title: {type: 'string'},
+    body: {type: 'string'},
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
